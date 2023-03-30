@@ -1,5 +1,5 @@
 export const ratesPage1 = [
-  {currency: 'EUR', label: 'Euro', value: 0.1},
+  {currency: 'EUR', label: 'Euro', value: 1},
   {currency: 'AED', label: 'Utd. Arab Emir. Dirham', value: 0.2},
   {currency: 'AUD', label: 'Australian Dollar', value: 0.3},
   {currency: 'BRL', label: 'Brazilian Real', value: 0.4},

@@ -1,7 +1,11 @@
 import React from 'react';
 import {Animated, Pressable, StyleSheet, Text} from 'react-native';
 
-export default function CustomButton({label, bgColor = 'gray', onPress}: any) {
+export default function CustomButton({
+  label,
+  bgColor = 'lightgray',
+  onPress,
+}: any) {
   // For more infos about Animated https://reactnative.dev/docs/animated
 
   const animatedButtonScale = new Animated.Value(1);
@@ -32,7 +36,7 @@ export default function CustomButton({label, bgColor = 'gray', onPress}: any) {
           {backgroundColor: bgColor},
           animatedScaleStyle,
         ]}>
-        <Text>{label}</Text>
+        <Text style={{textAlign: 'center'}}>{label}</Text>
       </Animated.View>
     </Pressable>
   );
